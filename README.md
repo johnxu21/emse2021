@@ -11,9 +11,13 @@ This repository contains scripts used to mine integrated commits between any two
 * Unique Commits for variant1 and variant2.
 
 ## How to run
-Import the project into any of your favorite editors. The code uses the following libraries: **json-simple-1.1.jar**, **joda-time-2.0.jar**. The libraries should be included in the build path of the project. The main project can be found in in the file **pr/IntegratedCommits.java**.
+* Import the project into any of your favorite editors. 
+* The code uses the following libraries: **json-simple-1.1.jar**, **joda-time-2.0.jar**. The libraries should be included in the build path of the project. 
+* The main project can be found in in the file **pr/IntegratedCommits.java**.
+* You need to put your GitHub token in the file **util/Constants.java**. Here is a site to guide you in generation a [GitHub token]( https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). If you are running a commit heavy project, you might want to use more than one token otherwise the execution of the project with encounter a **GitHub rate limit** exception. Borrow a token from a friend. **The project will not run without a GitHub token(s)**
 
-### Example Outputs 
+
+## Example Outputs 
 **variant1 = opendatakit/collect**
 
 **variant2 = grzesiek2010/collect**
