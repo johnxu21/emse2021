@@ -1,12 +1,14 @@
 # Scripts for mining Integrated Commits
 This repository contains scripts used to mine integrated commits between any two connected repositories. For example mainline (**variant1**) and fork (variant2). **variant1** and **variant2** can be interchanged. For any two connected repositories, the scripts are able to identify the following commits in the order below: 
-1. Pull requests (PR) integration and their commits
-a. Merged pull requests 
-b. Squashed pull requests
-c. Rebased pull requests
-2. Git integration
-a. Merge/Rebase commits
-b. Cherry-picked commits Ð The source and destination of the cherry-picked commits is also determined.
+
+* Pull requests (PR) integration and their commits: source = variant2, destination = variant2.
+	* Merged pull requests 
+	* Squashed pull requests
+	* Rebased pull requests
+* Git integration
+	* Merge/Rebase commits
+	* Cherry-picked commits Ð The source and destination of the cherry-picked commits is also determined.
+* Unique Commits for variant1 and variant2.
 
 ## How to run
 Import the project into any of your favorite editors. The code uses the following libraries: **json-simple-1.1.jar**, **joda-time-2.0.jar**. The libraries should be included in the build path of the project. The main project can be found in in the file **pr/IntegratedCommits.java**.
@@ -24,7 +26,8 @@ Merged Commits | [b87c46ba, 0f96afbe]
 #### Squashed PR
 PR-3462 : MergeCommit - 1ab3fe3e : MergeDate-2019-12-03T10:10:20Z : #Commits = 3
 
-SquashedCommit | PRCommits 
+SquashedCommit | [PRCommits] 
+
 1ab3fe3e | [3508d2e8, f44f5e9d, 1d912dd4]
 
 #### Rebased PR
