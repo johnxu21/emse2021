@@ -13,6 +13,7 @@ Import the project into any of your favorite editors. The code uses the followin
 
 ### Example Outputs 
 **variant1 = opendatakit/collect**
+
 **variant2 = grzesiek2010/collect**
 
 #### Merged PR
