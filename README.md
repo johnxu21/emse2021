@@ -70,7 +70,7 @@ e80aa401 | [74156dc4, cc9d2cbf, 7ee7ba6e]
 **PR Integrated Commits**    
 #MergedPR = 0 | #MergedPRCommits = 0   
 #SquashedPR = 1 | #SquashedPRCommits = 3  
-#RebasedPR = 0 | #RebasedPRCommits = 0
+#RebasedPR = 0 | #RebasedPRCommits = 0  
   
 **Git Integrated Commits**  
 Number of git merge/rebased commits = 1  
@@ -78,5 +78,5 @@ Number of git cherry-picked commits = 0
 
 **Unique Commits**  
 uniqueCommitsVariant1_size = 1  
-uniqueCommitsVariant2_size = 1
+uniqueCommitsVariant2_size = 1  
 
