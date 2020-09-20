@@ -22,10 +22,10 @@ This repository contains scripts used to mine integrated commits between any two
 
 ## Example Outputs 
 ### Pair 1
-**variant1 = getodk/collect** (Destination)  
-**variant2 = grzesiek2010/collect** (Source)  
-Fork-Date = 2016-12-02T11:26:41Z  
-Stop-Date = 2020-01-01T00:00:00Z  
+**variant1** = getodk/collect (Destination)  
+**variant2** = grzesiek2010/collect (Source)  
+**Fork-Date** = 2016-12-02T11:26:41Z  
+**Stop-Date** = 2020-01-01T00:00:00Z  
 
 **Merged PR**  
 PR-3531 : MergeCommit - 0f6558c0 :  MergeDate-2019-12-16T09:45:03Z : #Commits = 2  
@@ -44,7 +44,7 @@ PR-3434 : MergeCommit-56f4623d :  MergeDate-2019-11-05T14:14:16Z : #Commits = 5
 #### Summary of Commit Integration
 **PR Integrated Commits**    
 #MergedPR = 95 | #MergedPRCommits = 444   
-#SquashedPR = 436 | #SquashedPRCommits = 1034  
+#SquashedPR = 441 | #SquashedPRCommits = 1071  
 #RebasedPR = 27 | #RebasedPRCommits = 161
 
 **Git Integrated Commits**  
@@ -52,7 +52,7 @@ Number of git merge/rebased commits = 1305
 Number of git cherry-picked commits = 0  
 
 **Unique commits**  
-variant1 Unique commits = 3,038  
+variant1 Unique commits = 3,051  
 variant2 Unique commits = 1,305  
 
 ### Pair 2
