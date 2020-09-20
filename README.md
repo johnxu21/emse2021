@@ -21,10 +21,10 @@ This repository contains scripts used to mine integrated commits between any two
 
 ## Example Outputs 
 ### Pair 1
-**variant1 = opendatakit/collect** (Destination)  
+**variant1 = getodk/collect** (Destination)  
 **variant2 = grzesiek2010/collect** (Source)  
 Fork-Date = 2016-12-02T11:26:41Z  
-Stop-Date = 2019-12-18T20:35:18Z  
+Stop-Date = 2020-01-01T00:00:00Z  
 
 **Merged PR**  
 PR-3531 : MergeCommit - 0f6558c0 :  MergeDate-2019-12-16T09:45:03Z : #Commits = 2  
@@ -38,7 +38,7 @@ SquashedCommit | [PRCommits]
 
 **Rebased PR**  
 PR-3434 : MergeCommit-56f4623d :  MergeDate-2019-11-05T14:14:16Z : #Commits = 5  
-|prCommit : baseRepoCommit| -- |965a0728:56f4623d|a2a92d30:e1e19a71|55d63aaa:1c9e54ea|86a93057:6b34bb0c|42267310:9fa9bc55|  
+|prCommit : baseRepoCommit|   |965a0728:56f4623d|a2a92d30:e1e19a71|55d63aaa:1c9e54ea|86a93057:6b34bb0c|42267310:9fa9bc55|  
 
 #### Summary of Commit Integration
 ##### PR Integrated Commits  
