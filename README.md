@@ -79,3 +79,27 @@ Number of git cherry-picked commits = 0
 uniqueCommitsVariant1_size = 1  
 uniqueCommitsVariant2_size = 1  
 
+### Pair 3
+**variant1** = FredJul/Flym (Destination)  
+**variant2** = Etuldan/spaRSS (Source)  
+**Fork-Date** = 2015-01-28T17:31:32Z  
+**Stop-Date** = 2016-10-17T21:06:42Z  
+
+#### Summary of Commit Integration
+**PR Integrated Commits**    
+#MergedPR = 0 | #MergedPRCommits = 0   
+#SquashedPR = 0 | #SquashedPRCommits = 0  
+#RebasedPR = 0 | #RebasedPRCommits = 0  
+
+**Git Integrated Commits**  
+Number of git merge/rebased commits = 34  
+Number of git cherry-picked commits = 5
+
+gitCommitCherryVar1 = [fd9714a1, 495e9b0f, 3dfe67e7, 5fb5fee3, f42200ca]  
+gitCommitCherryVar2 = [63d93bb5, 2aa986d1, 6ed9d2e1, c0dfb2c4, bd8d04b4]  
+Cherry-Picked Source = [variant2, variant2, variant2, variant2, variant2]  
+  
+**Unique Commits**  
+uniqueCommitsVariant1_size = 120  
+uniqueCommitsVariant2_size = 272  
+
