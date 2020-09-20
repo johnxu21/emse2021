@@ -8,7 +8,7 @@ This repository contains scripts used to mine integrated commits between any two
 	* The script is also able determine
 * Git integration
 	* Merge/Rebase commits
-	* Cherry-picked commits Ð The source and destination of the cherry-picked commits is also determined.
+	* Cherry-picked commits. The source and destination of the cherry-picked commits is also identified.
 * Unique Commits for variant1 and variant2.
 
 ## How to run
@@ -41,16 +41,16 @@ PR-3434 : MergeCommit-56f4623d :  MergeDate-2019-11-05T14:14:16Z : #Commits = 5
 |prCommit : baseRepoCommit|   |965a0728:56f4623d|a2a92d30:e1e19a71|55d63aaa:1c9e54ea|86a93057:6b34bb0c|42267310:9fa9bc55|  
 
 #### Summary of Commit Integration
-##### PR Integrated Commits  
+**PR Integrated Commits**    
 #MergedPR = 95 | #MergedPRCommits = 444   
 #SquashedPR = 436 | #SquashedPRCommits = 1034  
 #RebasedPR = 27 | #RebasedPRCommits = 161
 
-##### Git Integrated Commits
+**Git Integrated Commits**  
 Number of git merge/rebased commits = 1305  
 Number of git cherry-picked commits = 0  
 
-##### Unique commits
+**Unique commits**  
 variant1 Unique commits = 3,038  
 variant2 Unique commits = 1,305  
 
