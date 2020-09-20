@@ -5,7 +5,6 @@ This repository contains scripts used to mine integrated commits between any two
 	* Merged pull requests 
 	* Squashed pull requests
 	* Rebased pull requests
-	* The script is also able determine
 * Git integration
 	* Merge/Rebase commits
 	* Cherry-picked commits. The source and destination of the cherry-picked commits is also identified.
