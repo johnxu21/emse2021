@@ -17,6 +17,7 @@ This repository contains scripts used to mine integrated commits between any two
 * The main project can be found in in the file **pr/IntegratedCommits.java**.
 * You need to put your GitHub token in the file **util/Constants.java**. Here is a site to guide you in generation a [GitHub token]( https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). If you are running a commit heavy project, you might want to use more than one token otherwise the execution of the project with encounter a **GitHub rate limit** exception. Borrow a token from a friend. **The project will not run without a GitHub token(s)**
 * In the main file **pr/IntegratedCommits.java**, change lines 24 and 25 for your variant pair. You can uncomment lines 30 to 44 and then comment out lines 27 and 28.
+* You can also choose to determine code integration within a given time interval. For example, if you want to know how a given PR was integrated, you can change the **startDate** and the **stopDate** to dates around the merge date of the pull request.
 
 
 ## Example Outputs 
