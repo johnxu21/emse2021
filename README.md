@@ -56,5 +56,27 @@ variant1 Unique commits = 3,051
 variant2 Unique commits = 1,305  
 
 ### Pair 2
+**variant1** = k9mail/k-9 (Destination)  
+**variant2** = philipwhiuk/k2 (Source)  
+**Fork-Date** = 2018-01-17T20:06:10Z
+**Stop-Date** = 2018-01-17T20:07:10Z
+
+**Squashed PR**  
+PR-3078 : MergeCommit-e80aa401 : MergeDate-2018-01-17T20:07:10Z : #Commits = 3  
+SquashedCommit | [PRCommits]  
+e80aa401 | [74156dc4, cc9d2cbf, 7ee7ba6e]  
+
+#### Summary of Commit Integration
+**PR Integrated Commits**    
+#MergedPR = 0 | #MergedPRCommits = 0   
+#SquashedPR = 1 | #SquashedPRCommits = 3  
+#RebasedPR = 0 | #RebasedPRCommits = 0
   
+**Git Integrated Commits**  
+Number of git merge/rebased commits = 1  
+Number of git cherry-picked commits = 0  
+
+**Unique Commits**  
+uniqueCommitsVariant1_size = 1  
+uniqueCommitsVariant2_size = 1
 
