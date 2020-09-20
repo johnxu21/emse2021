@@ -96,12 +96,8 @@ Number of git merge/rebased commits = 34
 Number of git cherry-picked commits = 5
 
 **variant1-Commit : variant2-Commit : Cherrypick-Source-Repo**  
-fd9714a1 : 63d93bb5 : variant2  
-495e9b0f : 2aa986d1 : variant2  
-3dfe67e7 : 6ed9d2e1 : variant2  
-5fb5fee3 : c0dfb2c4 : variant2  
-f42200ca : bd8d04b4 : variant2  
-  
+| fd9714a1:63d93bb5:variant2 | 495e9b0f:2aa986d1:variant2 | 3dfe67e7:6ed9d2e1:variant2 | 5fb5fee3:c0dfb2c4:variant2 | f42200ca:bd8d04b4:variant2 |  
+
 **Unique Commits**  
 uniqueCommitsVariant1_size = 120  
 uniqueCommitsVariant2_size = 272  

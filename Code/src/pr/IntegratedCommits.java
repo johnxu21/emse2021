@@ -21,11 +21,11 @@ import util.Constants;
 public class IntegratedCommits {
 
 	public static void main(String[] args) {
-		String variant1 = "getodk/collect";
-		String variant2 = "grzesiek2010/collect";
+		String variant1 = "FredJul/Flym";
+		String variant2 = "Etuldan/spaRSS";
 		int ct = 0;
-		String startDate = "2016-12-02T11:26:41Z"; //fork date
-		String stopDate = "2020-01-10T00:00:00Z"; // last commit date.
+		String startDate = "2015-01-28T17:31:32Z"; // fork date
+		String stopDate = "2016-10-17T21:06:42Z"; // last commit date.
 //Uncomment these lines if you want to collect all the integration information after the fork date until the last commit date and then comment out lines 27 & 28
 //		String forkDate = ForkDateAndVariantsLastCommitDates.forkDate(variant2, Constants.getToken(), ct);
 //		ct++;
@@ -50,7 +50,7 @@ public class IntegratedCommits {
 		List<String> cherryPickSource = new ArrayList<String>();
 
 		List<String> gitCommitMergeRebase = new ArrayList<String>();
-		
+
 		List<String> uniqueCommitsVar1 = new ArrayList<String>();
 		List<String> uniqueCommitsVar2 = new ArrayList<String>();
 
@@ -103,7 +103,7 @@ public class IntegratedCommits {
 				System.out.println(merge_commit_sha.substring(0, 8) + " | " + prCom + "\n");
 				totSquashedCom += prComSize;
 				totSquashed++;
-				prIntegratedCommitsVar1.add(merge_commit_sha.substring(0,8));
+				prIntegratedCommitsVar1.add(merge_commit_sha.substring(0, 8));
 			}
 			// Rebased PR commits
 			else if (ret[0].equals("true") && interComSize > 1) {
@@ -138,7 +138,7 @@ public class IntegratedCommits {
 					System.out.println("Merged PR");
 					System.out.println("PR-" + PR_Number + " : MergeCommit-" + merge_commit_sha.substring(0, 8)
 							+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Merged");
-					
+
 					System.out.println("Merged Commits | " + prCom + "\n");
 					totMergedCom += prComSize;
 					totMerged++;
@@ -146,40 +146,40 @@ public class IntegratedCommits {
 					// Unidentified PR integrated commits
 				} else {
 					ArrayList<String> prRebasedCommits = new ArrayList<String>();
-					String[] missMgC = MergedPRMissingMergeCommit.missingMergeCommit(variant1, PR_Number, prMergeDate, prRebasedCommits, Constants.getToken(), ct).split("=");
+					String[] missMgC = MergedPRMissingMergeCommit.missingMergeCommit(variant1, PR_Number, prMergeDate,
+							prRebasedCommits, Constants.getToken(), ct).split("=");
 					String prCommitsmg = missMgC[0];
 					ct = Integer.parseInt(missMgC[1]);
-					if(prRebasedCommits.size() == 1 && prCommitsmg.equals("merged")) {
+					if (prRebasedCommits.size() == 1 && prCommitsmg.equals("merged")) {
 						System.out.println("Merged PR; Missing Merge Commit");
 						System.out.println("PR-" + PR_Number + " : MergeCommit-" + merge_commit_sha.substring(0, 8)
-						+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Merged");
-						
+								+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Merged");
+
 						System.out.println("Merged Commits | " + prCom + "\n");
 						totMergedCom += prComSize;
 						totMerged++;
 						prIntegratedCommitsVar1.addAll(prCom);
-					}
-					else if (prRebasedCommits.size() > 1 && prCommitsmg.equals("rebased")){
+					} else if (prRebasedCommits.size() > 1 && prCommitsmg.equals("rebased")) {
 						System.out.println("Rebased PR; Rebase time Different");
 						System.out.println("PR-" + PR_Number + " : MergeCommit-" + merge_commit_sha.substring(0, 8)
 								+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Rebased");
-						
-						System.out.println("|prCommit : baseRepoCommit| -- " + prRebasedCommits.get(prRebasedCommits.size()-1) + "\n");
-						prRebasedCommits.remove(prRebasedCommits.size()-1);
+
+						System.out.println("|prCommit : baseRepoCommit| -- "
+								+ prRebasedCommits.get(prRebasedCommits.size() - 1) + "\n");
+						prRebasedCommits.remove(prRebasedCommits.size() - 1);
 						prIntegratedCommitsVar1.addAll(prRebasedCommits);
 						totRebasedCom += prComSize;
 						totRebased++;
-					}
-					else {
+					} else {
 						System.out.println("Unidentified PR Integration");
 						System.out.println("PR-" + PR_Number + " : MergeCommit-" + merge_commit_sha.substring(0, 8)
-						+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Unknown!!!!! \n");
-						
+								+ " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Unknown!!!!! \n");
+
 						prIntegratedCommitsVar1.addAll(prCom);
 						totUnknownCom += prComSize;
 						totUnknown++;
 					}
-					
+
 				}
 			}
 		}
@@ -202,10 +202,10 @@ public class IntegratedCommits {
 		ct = Integer.parseInt(cherryPickSource.get(cherryPickSource.size() - 1));
 		cherryPickSource.remove(cherryPickSource.size() - 1);
 
-		uniqueCommitsVar1 = UniqueCommits.repoUniqueCommits(allCommitsAfterForkDateVar1,
-				gitCommitMergeRebase, gitCommitCherryVar1, gitCommitCherryVar2);
-		uniqueCommitsVar2 = UniqueCommits.repoUniqueCommits(allCommitsAfterForkDateVar2,
-				gitCommitMergeRebase, gitCommitCherryVar1, gitCommitCherryVar2);
+		uniqueCommitsVar1 = UniqueCommits.repoUniqueCommits(allCommitsAfterForkDateVar1, gitCommitMergeRebase,
+				gitCommitCherryVar1, gitCommitCherryVar2);
+		uniqueCommitsVar2 = UniqueCommits.repoUniqueCommits(allCommitsAfterForkDateVar2, gitCommitMergeRebase,
+				gitCommitCherryVar1, gitCommitCherryVar2);
 
 		System.out.println(" PR Integrated Commits");
 		System.out.println("#MergedPR = " + totMerged + " | #MergedPRCommits = " + totMergedCom + " \n#SquashedPR = "
@@ -223,9 +223,15 @@ public class IntegratedCommits {
 		System.out.println("gitCommitMergeRebase_size = " + gitCommitMergeRebase.size());
 
 		System.out.println("\ngitCommitCherryPick_size : " + gitCommitCherryVar1.size());
-		System.out.println("gitCommitCherryVar1 = " + gitCommitCherryVar1.toString());
-		System.out.println("gitCommitCherryVar2 = " + gitCommitCherryVar2.toString());
-		System.out.println("cherryPickRepoSource = " + cherryPickSource.toString());
+		if (gitCommitCherryVar1.size() != 0) {
+			System.out.println("variant1-Commit : variant2-Commit : Cherrypick-Source-Repo");
+			String cherry = "| ";
+			for (int i = 0; i < gitCommitCherryVar1.size(); i++) {
+				cherry += gitCommitCherryVar1.get(i) + ":" + gitCommitCherryVar2.get(i) + ":"
+						+ cherryPickSource.get(i) +" | ";
+			}
+			System.out.println(cherry);
+		}
 
 		System.out.println("\n Unique Commits");
 		System.out.println("uniqueCommitsVariant1_size = " + uniqueCommitsVar1.size());
@@ -263,11 +269,11 @@ public class IntegratedCommits {
 					ct = 0; // go back to the first index......
 				}
 
-				
 //				String mlv_url = Call_URL.callURL("https://api.github.com/repos/" + variant1 + "/pulls?page=" + p
 //						+ "&per_page=100&state=closed&access_token="+ token[ct++]);
-				String mlv_url = Call_URL.callURL1("https://api.github.com/repos/" + variant1 + "/pulls?page=" + p
-						+ "&per_page=100&state=closed", token[ct++]);
+				String mlv_url = Call_URL.callURL1(
+						"https://api.github.com/repos/" + variant1 + "/pulls?page=" + p + "&per_page=100&state=closed",
+						token[ct++]);
 
 				if (JSONUtils.isValidJSON(mlv_url) == false) {///
 
@@ -326,7 +332,6 @@ public class IntegratedCommits {
 		return prDetails;
 	}
 
-
 	public static String integratedCommitSize(String repo, String prMergeDate, String[] tokens, int ct) {
 
 		String since = DateOperations.dateLessBy1Sec(prMergeDate);
@@ -368,7 +373,7 @@ public class IntegratedCommits {
 				JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 
 				String prCommitSha = (String) jsonObject.get("sha");
-				prComList.add(prCommitSha.substring(0,8));
+				prComList.add(prCommitSha.substring(0, 8));
 			}
 
 		} catch (ParseException e) {
