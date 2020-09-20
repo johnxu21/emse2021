@@ -5,7 +5,6 @@ This repository contains scripts used to mine integrated commits between any two
 	* Merged pull requests 
 	* Squashed pull requests
 	* Rebased pull requests
-	* The script is also able determine
 * Git integration
 	* Merge/Rebase commits
 	* Cherry-picked commits. The source and destination of the cherry-picked commits is also identified.
@@ -58,7 +57,7 @@ variant2 Unique commits = 1,305
 ### Pair 2
 **variant1** = k9mail/k-9 (Destination)  
 **variant2** = philipwhiuk/k2 (Source)  
-**Fork-Date** = 2018-01-17T20:06:10Z
+**Fork-Date** = 2018-01-17T20:06:10Z  
 **Stop-Date** = 2018-01-17T20:07:10Z
 
 **Squashed PR**  
