@@ -26,18 +26,19 @@ This repository contains scripts used to mine integrated commits between any two
 Fork-Date = 2016-12-02T11:26:41Z  
 Stop-Date = 2019-12-18T20:35:18Z  
 
-#### Merged PR
+**Merged PR**  
 PR-3531 : MergeCommit - 0f6558c0 :  MergeDate-2019-12-16T09:45:03Z : #Commits = 2  
-Merged Commits | [b87c46ba, 0f96afbe]
+Merged Commits | [b87c46ba, 0f96afbe]  
 
-#### Squashed PR
+**Squashed PR**
 PR-3462 : MergeCommit - 1ab3fe3e : MergeDate-2019-12-03T10:10:20Z : #Commits = 3  
 SquashedCommit | [PRCommits]  
-1ab3fe3e | [3508d2e8, f44f5e9d, 1d912dd4]
+1ab3fe3e | [3508d2e8, f44f5e9d, 1d912dd4]  
 
-#### Rebased PR
+
+**Rebased PR**  
 PR-3434 : MergeCommit-56f4623d :  MergeDate-2019-11-05T14:14:16Z : #Commits = 5  
-|prCommit : baseRepoCommit| -- |965a0728:56f4623d|a2a92d30:e1e19a71|55d63aaa:1c9e54ea|86a93057:6b34bb0c|42267310:9fa9bc55|
+|prCommit : baseRepoCommit| -- |965a0728:56f4623d|a2a92d30:e1e19a71|55d63aaa:1c9e54ea|86a93057:6b34bb0c|42267310:9fa9bc55|  
 
 #### Summary of Commit Integration
 ##### PR Integrated Commits  
