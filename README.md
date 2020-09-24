@@ -13,7 +13,7 @@ This repository contains scripts used to mine integrated commits between any two
 ## How to run
 * Clone and import the project into any of your favorite editors. 
 * The project uses two libraries json simple and joda, to download these libraries: (1) Inside the editor, use clean and build function. Or (2) from the command prompt, run the command "mvn clean" inside the project's root directory.
-* Project has been tested on IDEs Intelli J IDEA CE and Netbeans.
+* Project has been tested on IDEs **Intelli J IDEA CE** and **Netbeans**.
 * The main project can be found in in the file **pr/IntegratedCommits.java**.
 * You need to put your GitHub token in the file **util/Constants.java**. Here is a site to guide you in generation a [GitHub token]( https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). If you are running a commit heavy project, you might want to use more than one token otherwise the execution of the project with encounter a **GitHub rate limit** exception. Borrow a token from a friend. **The project will not run without a GitHub token(s)**
 * In the main file **pr/IntegratedCommits.java**, change lines 24 and 25 for your variant pair. You can uncomment lines 30 to 44 and then comment out lines 27 and 28.
