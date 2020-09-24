@@ -8,7 +8,7 @@ public class Constants {
 
     
     public static String[] getToken(){
-       String[] tokens = { };
+       String[] tokens = {"" };
         return tokens;
     }
 
