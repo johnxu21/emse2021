@@ -21,8 +21,8 @@ import util.Constants;
 public class IntegratedCommits {
 
     public static void main(String[] args) {
-        String variant1 = "getodk/collect";
-        String variant2 = "lognaturel/collect";
+        String variant2 = "getodk/collect";
+        String variant1 = "lognaturel/collect";
         int ct = 0;
         String startDate = "2017-04-06T22:35:06Z"; // fork date
         String stopDate = "2020-09-01T00:06:42Z"; // last commit date.
