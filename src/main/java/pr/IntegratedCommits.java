@@ -170,7 +170,7 @@ public class IntegratedCommits {
                         totRebasedCom += prComSize;
                         totRebased++;
                     } else {
-                        System.out.println("Unidentified PR Integration");
+                        System.out.println("Unclassified PR Integration");
                         System.out.println("PR-" + PR_Number + " : MergeCommit-" + merge_commit_sha.substring(0, 8)
                                 + " :  MergeDate-" + prMergeDate + " : #Commits = " + prComSize + " : Unknown!!!!! \n");
 
@@ -209,7 +209,7 @@ public class IntegratedCommits {
         System.out.println(" PR Integrated Commits");
         System.out.println("#MergedPR = " + totMerged + " | #MergedPRCommits = " + totMergedCom + " \n#SquashedPR = "
                 + totSquashed + " | #SquashedPRCommits = " + totSquashedCom + "\n#RebasedPR = " + totRebased
-                + " | #RebasedPRCommits = " + totRebasedCom + " \n#Unidentified PR Integration = " + totUnknown
+                + " | #RebasedPRCommits = " + totRebasedCom + " \n#Unclassified PR Integration = " + totUnknown
                 + " | Commits = " + totUnknownCom);
 
         System.out.println("\nprIntegratedCommitsVariant1_size = " + prIntegratedCommitsVar1.size());
