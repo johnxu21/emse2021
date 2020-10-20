@@ -103,3 +103,38 @@ Number of git cherry-picked commits = 5
 uniqueCommitsVariant1_size = 120  
 uniqueCommitsVariant2_size = 272  
 
+### Pair 4
+
+**variant1** = dashevo/dash-wallet (Destination)  
+**variant2** = sambarboza/dash-wallet (Source)  
+**Fork-Date** = 2018-01-11T20:39:31Z  
+**Stop-Date** = 2020-10-01T00:06:42Z 
+
+**Merged PR**  
+PR-421 : MergeCommit-c4d8801b :  MergeDate-2020-05-29T21:28:37Z : #Commits = 2 : Merged
+Merged Commits | [46a88296, 8982189c] 
+
+**Squashed PR**
+PR-333 : MergeCommit-3b0f2d16 : MergeDate-2020-02-13T15:10:27Z : 
+#Commits = 2 : Squashed
+SquashedCommit | PRCommits
+3b0f2d16 | [3b788fe3, cc493a58]
+
+**Rebased PR**
+PR-114 : MergeCommit-6614463d :  MergeDate-2018-05-31T02:50:25Z : #Commits = 3 Rebased
+|prCommit : baseRepoCommit| -- |ac5cf8c3:6614463d|354d36cb:5c5b7304|3b8a3985:65c327d5|
+
+#### Summary of Commit Integration
+**PR Integrated Commits**    
+#MergedPR = 3 | #MergedPRCommits = 13 
+#SquashedPR = 43 | #SquashedPRCommits = 194
+#RebasedPR = 2 | #RebasedPRCommits = 6 
+#Unclassified PR Integration = 26 | Commits = 167
+
+**Git Integrated Commits**  
+Number of git merge/rebased commits = 405  
+Number of git cherry-picked commits = 0  
+
+**Unique commits**  
+variant1 Unique commits = 414  
+variant2 Unique commits = 410  
