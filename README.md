@@ -1,7 +1,7 @@
 # Scripts for mining Integrated Commits
 This repository contains scripts used to mine integrated commits between any two connected repositories. For example mainline (**variant1**) and fork (variant2). **variant1** and **variant2** can be interchanged. For any two connected repositories, the scripts are able to identify the following commits in the order below: 
 
-* Pull requests (PR) integration and their commits: source = variant2, destination = variant2.
+* Pull requests (PR) integration and their commits: source = variant1, destination = variant2.
 	* Merged pull requests 
 	* Squashed pull requests
 	* Rebased pull requests
