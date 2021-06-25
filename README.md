@@ -138,3 +138,35 @@ Number of git cherry-picked commits = 0
 **Unique commits**  
 variant1 Unique commits = 414  
 variant2 Unique commits = 410  
+
+### Pair 5
+
+**variant1** = TerriaJS/terriajs (Source)  
+**variant2** = bioretics/rer3d-terriajs (Destination)  
+**Fork-Date** = 2018-01-11T20:39:31Z  
+**Stop-Date** = 2021-04-01T00:06:42Z 
+
+**Merged PR**  
+PR-4 : MergeCommit-48d0a02 :  MergeDate-2018-01-27T22:13:06Z : #Commits = 56 : Merged
+Merged Commits | [11d2006d5, 070a1687c] only a sample of the first two commits 
+
+**Squashed PR**
+No squash prs
+
+**Rebased PR**
+No rebase Prs
+
+#### Summary of Commit Integration
+**PR Integrated Commits**    
+#MergedPR = 9 | #MergedPRCommits = 1,926 
+#SquashedPR = 43 | #SquashedPRCommits = 0
+#RebasedPR = 2 | #RebasedPRCommits = 0 
+#Unclassified PR Integration = 0 | Commits = 0
+
+**Git Integrated Commits**  
+Number of git merge/rebased commits = 0  
+Number of git cherry-picked commits = 10  
+
+**Unique commits**  
+variant1 Unique commits = 225  
+variant2 Unique commits = 268 
