@@ -159,8 +159,8 @@ No rebase Prs
 #### Summary of Commit Integration
 **PR Integrated Commits**    
 #MergedPR = 9 | #MergedPRCommits = 1,926 
-#SquashedPR = 43 | #SquashedPRCommits = 0
-#RebasedPR = 2 | #RebasedPRCommits = 0 
+#SquashedPR = 0 | #SquashedPRCommits = 0
+#RebasedPR = 0 | #RebasedPRCommits = 0 
 #Unclassified PR Integration = 0 | Commits = 0
 
 **Git Integrated Commits**  
@@ -170,3 +170,35 @@ Number of git cherry-picked commits = 10
 **Unique commits**  
 variant1 Unique commits = 225  
 variant2 Unique commits = 268 
+
+### Pair 6
+
+**variant1** = lagbug/YoutubeExtractor (Destination)  
+**variant2** = Kimmax/SYMMExtractor (Source)  
+**Fork-Date** = 2015-06-01T21:38:37Z  
+**Stop-Date** = 2017-02-01T11:38:20Z 
+
+**Merged PR**  
+PR-195 : MergeCommit-27be8a8d :  MergeDate-2016-06-29T18:22:06Z : #Commits = 1 : Merged
+Merged Commits | [76820c2d]
+
+**Squashed PR**
+No squash prs
+
+**Rebased PR**
+No rebase Prs
+
+#### Summary of Commit Integration
+**PR Integrated Commits**    
+#MergedPR = 2 | #MergedPRCommits = 2 
+#SquashedPR = 0 | #SquashedPRCommits = 0
+#RebasedPR = 0 | #RebasedPRCommits = 0 
+#Unclassified PR Integration = 0 | Commits = 0
+
+**Git Integrated Commits**  
+Number of git merge/rebased commits = 3  
+Number of git cherry-picked commits = 2 
+
+**Unique commits**  
+variant1 Unique commits = 42  
+variant2 Unique commits = 16 
