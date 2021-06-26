@@ -21,7 +21,7 @@ This repository contains scripts used to mine integrated commits between any two
 
 
 ## Example Outputs 
-### Pair 1
+### Pair 1 (Android)
 **variant1** = getodk/collect (Destination)  
 **variant2** = grzesiek2010/collect (Source)  
 **Fork-Date** = 2016-12-02T11:26:41Z  
@@ -55,7 +55,7 @@ Number of git cherry-picked commits = 0
 variant1 Unique commits = 3,051  
 variant2 Unique commits = 1,305  
 
-### Pair 2
+### Pair 2 (Android)
 **variant1** = k9mail/k-9 (Destination)  
 **variant2** = philipwhiuk/k2 (Source)  
 **Fork-Date** = 2018-01-17T20:06:10Z  
@@ -80,7 +80,7 @@ Number of git cherry-picked commits = 0
 uniqueCommitsVariant1_size = 1  
 uniqueCommitsVariant2_size = 1  
 
-### Pair 3
+### Pair 3 (Android)
 **variant1** = FredJul/Flym (Destination)  
 **variant2** = Etuldan/spaRSS (Source)  
 **Fork-Date** = 2015-01-28T17:31:32Z  
@@ -103,7 +103,7 @@ Number of git cherry-picked commits = 5
 uniqueCommitsVariant1_size = 120  
 uniqueCommitsVariant2_size = 272  
 
-### Pair 4
+### Pair 4 (Android)
 
 **variant1** = dashevo/dash-wallet (Destination)  
 **variant2** = sambarboza/dash-wallet (Source)  
@@ -139,7 +139,7 @@ Number of git cherry-picked commits = 0
 variant1 Unique commits = 414  
 variant2 Unique commits = 410  
 
-### Pair 5
+### Pair 5 (JavaScript)
 
 **variant1** = TerriaJS/terriajs (Source)  
 **variant2** = bioretics/rer3d-terriajs (Destination)  
@@ -171,7 +171,7 @@ Number of git cherry-picked commits = 10
 variant1 Unique commits = 225  
 variant2 Unique commits = 268 
 
-### Pair 6
+### Pair 6 (.NET)
 
 **variant1** = lagbug/YoutubeExtractor (Destination)  
 **variant2** = Kimmax/SYMMExtractor (Source)  
