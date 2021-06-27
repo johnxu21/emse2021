@@ -182,6 +182,10 @@ variant2 Unique commits = 268
 PR-195 : MergeCommit-27be8a8d :  MergeDate-2016-06-29T18:22:06Z : #Commits = 1 : Merged
 Merged Commits | [76820c2d]
 
+**Merged PR**  
+PR-160 : MergeCommit-2de2232e :  MergeDate-2015-12-21T11:29:44Z : #Commits = 1 : Merged
+Merged Commits | [2fb0b8d2]
+
 **Squashed PR**
 No squash prs
 
