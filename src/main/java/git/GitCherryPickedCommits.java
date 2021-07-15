@@ -14,7 +14,9 @@ public class GitCherryPickedCommits {
 		 * same: AuthorName, AuthorDate, Commit Message
 		 * The until date parameter in the commit API used is the smaller of the two date between mlv and fv
 		 * */
-		public static List<String> gitCherryPickedCommits(String variant1, String variant2, List<String> var1CommitDetails, List<String> var2CommitDetails, List<String> var1CherryPickedCommit, List<String> var2CherryPickedCommit, String[] tokens, int ct) {
+		public static List<String> gitCherryPickedCommits(String variant1, String variant2, List<String> 
+		var1CommitDetails, List<String> var2CommitDetails, List<String> var1CherryPickedCommit, 
+		List<String> var2CherryPickedCommit, String[] tokens, int ct) {	
 			List<String> source = new ArrayList<String>();
 			for (int i = 0; i < var1CommitDetails.size(); i++) {
 				String[] mlvDetails = var1CommitDetails.get(i).split("===");
@@ -34,5 +36,5 @@ public class GitCherryPickedCommits {
 			return source;
 
 		}
-	
+		
 }

@@ -68,7 +68,7 @@ public class Call_URL {
 	    try {
 	        URL url = new URL(ReopUrl);
 	        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-	        connection.setRequestProperty("Authorization", "Bearer " + bearerToken);
+	        connection.setRequestProperty("Authorization", "token " + bearerToken);
 	        connection.setDoOutput(true);
 	        connection.setRequestMethod("GET");
 	        reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
