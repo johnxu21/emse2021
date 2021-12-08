@@ -1,4 +1,4 @@
-# Title: Reuse and Maintenance Practices among Divergent Forks in Three Software Ecosystems
+# Reuse and Maintenance Practices among Divergent Forks in Three Software Ecosystems
 
 ## Abstract
 With the rise of social coding platforms that rely on distributed version control systems, software reuse is also on the rise. Many software developers leverage this reuse by creating variants through forking, to account for different customer needs, markets, or environments. Forked variants then form a so-called software family; they share a common code base and are maintained in parallel by same or different developers. As such, software families can easily arise within software ecosystems, which are large collections of interdependent software components maintained by communities of collaborating contributors. However, little is known about the existence and characteristics of such families within ecosystems, especially about their maintenance practices. Improving our empirical understanding of such families will help build better tools for maintaining and evolving such families.
